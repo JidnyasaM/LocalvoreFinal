@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddRecipe"
+    tools:showIn="@layout/activity_add_recipe">
+
+    <EditText
+        android:id="@+id/recipeName"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:fontFamily="@font/cagliostro"
+        android:hint="@string/recipeName"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/recipeName_clear"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_clear_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/recipeName"
+        app:layout_constraintEnd_toEndOf="@+id/recipeName"
+        app:layout_constraintTop_toTopOf="@+id/recipeName" />
+
+    <EditText
+        android:id="@+id/recipeDescription"
+        android:layout_width="300dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="@font/cagliostro"
+        android:hint="@string/recipeDescription"
+        android:inputType="textMultiLine"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="@+id/recipeName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/recipeName"
+        app:layout_constraintTop_toBottomOf="@+id/recipeName" />
+
+    <Button
+        android:id="@+id/recipeDescription_clear"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_clear_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/recipeDescription"
+        app:layout_constraintEnd_toEndOf="@+id/recipeDescription"
+        app:layout_constraintTop_toTopOf="@+id/recipeDescription" />
+
+    <Button
+        android:id="@+id/openCamera"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/side_nav_bar"
+        android:fontFamily="@font/cagliostro"
+        android:text="@string/openCamera"
+        app:layout_constraintStart_toStartOf="@+id/recipeName"
+        app:layout_constraintTop_toBottomOf="@+id/recipeImage" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/side_nav_bar"
+        android:fontFamily="@font/cagliostro"
+        android:text="@android:string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/openCamera"
+        app:layout_constraintTop_toBottomOf="@+id/openCamera" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/side_nav_bar"
+        android:fontFamily="@font/cagliostro"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/addPhotos"
+        app:layout_constraintStart_toEndOf="@+id/cancel"
+        app:layout_constraintTop_toBottomOf="@+id/addPhotos" />
+
+    <ImageView
+        android:id="@+id/recipeImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/recipeImage"
+        app:layout_constraintEnd_toEndOf="@+id/recipeName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/recipeName"
+        app:layout_constraintTop_toBottomOf="@+id/recipeDescription" />
+
+    <Button
+        android:id="@+id/addPhotos"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/side_nav_bar"
+        android:fontFamily="@font/cagliostro"
+        android:text="@string/addPhotos"
+        app:layout_constraintEnd_toEndOf="@+id/recipeName_clear"
+        app:layout_constraintStart_toEndOf="@+id/openCamera"
+        app:layout_constraintTop_toBottomOf="@+id/recipeImage" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+    tools:context=".NewAccountActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rightView"
+        android:layout_width="299dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/email1"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="102dp"
+            android:ems="10"
+            android:fontFamily="@font/cagliostro"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/useName_clear"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignBaseline="@+id/userName"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/ic_clear_black_24dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="@+id/userName"
+            app:layout_constraintTop_toTopOf="@+id/userName"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/password2"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="76dp"
+            android:ems="10"
+            android:fontFamily="@font/cagliostro"
+            android:hint="@string/newPassword"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/signUpButton"
+            android:layout_width="123dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="26dp"
+            android:background="?attr/colorPrimary"
+            android:fontFamily="@font/cagliostro"
+            android:text="@string/signUp"
+            android:textStyle="bold"
+            tools:textColor="@android:color/background_dark" />
+
+        <Button
+            android:id="@+id/password1_clear"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignBaseline="@+id/password1"
+            android:layout_alignStart="@+id/useName_clear"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/ic_clear_black_24dp" />
+
+        <EditText
+            android:id="@+id/password1"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="151dp"
+            android:ems="10"
+            android:fontFamily="@font/cagliostro"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="37dp"
+            android:ems="10"
+            android:fontFamily="@font/cagliostro"
+            android:hint="@string/newUserName"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/email1_clear"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignBaseline="@+id/email1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/ic_clear_black_24dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/email1"
+            app:layout_constraintEnd_toEndOf="@+id/email1"
+            app:layout_constraintTop_toTopOf="@+id/email1" />
+
+        <Button
+            android:id="@+id/password2_clear"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignBaseline="@+id/password2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="41dp"
+            android:background="@drawable/ic_clear_black_24dp"
+            app:layout_constraintEnd_toEndOf="@+id/password2"
+            app:layout_constraintTop_toTopOf="@+id/password2"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/leftView"
+        android:layout_width="295dp"
+        android:layout_height="360dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="52dp"
+            android:fontFamily="@font/cemong"
+            android:text="@string/title"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="65sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/logo2"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="54dp"
+            android:contentDescription="@string/logo"
+            app:layout_constraintEnd_toEndOf="@+id/title2"
+            app:layout_constraintStart_toStartOf="@+id/title2"
+            app:layout_constraintTop_toBottomOf="@+id/title2"
+            app:srcCompat="@drawable/logo" />
+    </RelativeLayout>
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+</android.support.constraint.ConstraintLayout>

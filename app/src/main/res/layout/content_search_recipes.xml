@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SearchRecipesActivity"
+    tools:showIn="@layout/app_bar_search_recipes">
+
+    <TextView
+        android:id="@+id/searchTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/cagliostro"
+        android:text="@string/search_recipe"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/typeSearchRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="@font/cagliostro"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/searchTitle"
+        app:layout_constraintTop_toBottomOf="@+id/searchTitle"
+        tools:text="@string/search_hint" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/side_nav_bar"
+        android:fontFamily="@font/cagliostro"
+        android:text="@string/search_r_button"
+        app:layout_constraintEnd_toEndOf="@+id/searchTitle"
+        app:layout_constraintStart_toEndOf="@+id/typeSearchRecipe"
+        app:layout_constraintTop_toBottomOf="@+id/searchTitle" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp"
+        app:layout_constraintEnd_toEndOf="@+id/searchTitle"
+        app:layout_constraintStart_toStartOf="@+id/searchTitle"
+        app:layout_constraintTop_toBottomOf="@+id/typeSearchRecipe">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/searchEntries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/dashboard_list_item" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

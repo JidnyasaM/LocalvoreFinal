@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Localvore</string>
+    <string name="title">Localvore</string>
+    <string name="logo">Localvore Logo</string>
+    <string name="welcome">Welcome Image</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="newAccount">New to Localvore? Create an account!</string>
+
+    <string name="enterValues">Please enter values in all the fields</string>
+    <string name="enterEmailValue">Please enter an email first.</string>
+    <string name="enterPasswordValue">Please enter the password first.</string>
+    <string name="enterTheEmail">Please enter a valid email.</string>
+    <string name="newUserName">Type a user name</string>
+    <string name="newPassword">Retype the new password.</string>
+    <string name="location">Add your location.</string>
+    <string name="enterCorrectPassword">The password fields do not match.</string>
+    <string name="signUp">Sign Up!</string>
+    <string name="more">Click for more</string>
+
+    <string name="title_activity_home">My Feed</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Localvore Options</string>
+    <string name="nav_header_subtitle">Localvore Application</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="editProf">Edit Profile</string>
+    <string name="Search_Recipe">Search Recipes</string>
+    <string name="Search_Foods">Search Foods Near you</string>
+    <string name="logout">Logout</string>
+    <string name="anyIdeas">Any new recipes to share? Click the icon ->></string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="addRecipesPage">Add new recipe</string>
+    <string name="title_activity_add_recipe">Add Recipe</string>
+    <string name="recipeName">Recipe Name</string>
+    <string name="recipeDescription">Describe your recipe!</string>
+    <string name="openCamera">Camera</string>
+    <string name="addPhotos">Add Photos</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="recipeImage">Recipe Image</string>
+
+    <string name="title_activity_display_recipe">Recipe Display</string>
+    <string name="displayClickedRecipe">Recipe Details</string>
+    <string name="recipe_display_user_name">User Name</string>
+    <string name="sampleImage">Sample Image</string>
+    <string name="endLine">Sample EndLine</string>
+    <string name="shareOnFacebook">Like the recipe? Share it with Friends!</string>
+    <string name="title_activity_edit_profile">EditProfile</string>
+    <string name="pleaseUseCamera">Please upload a picture with your recipe!</string>
+
+    <string name="home">My Feed</string>
+    <string name="useridTextView">User ID</string>
+    <string name="userid">Your User ID</string>
+    <string name="emailid">Email</string>
+    <string name="editemailid">Your email ID</string>
+    <string name="title_activity_logout">LogoutActivity</string>
+    <string name="logout_message"> Come Back Soon!</string>
+    <string name="login_again">Log In Again!</string>
+    <string name="search_recipe"> Search for a recipe based on the ingredient!</string>
+    <string name="search_r_button">Search</string>
+    <string name="search_hint">Type in the ingredient.</string>
+    <string name="title_activity_search_recipes">SearchRecipesActivity</string>
+    <string name="coming">Coming soon</string>
+</resources>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddRecipe"
+    tools:showIn="@layout/activity_add_recipe">
+
+    <RelativeLayout
+        android:id="@+id/centerView"
+        android:layout_width="177dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rightView"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/recipeImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/recipeImage"
+            app:layout_constraintHorizontal_bias="0.0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/leftView"
+        android:layout_width="238dp"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/recipeName"
+            android:layout_width="300dp"
+            android:layout_height="52dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:fontFamily="@font/cagliostro"
+            android:hint="@string/recipeName"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="@android:color/background_dark"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/recipeName_clear"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/recipeName"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="28dp"
+            android:background="@drawable/ic_clear_black_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/recipeName"
+            app:layout_constraintEnd_toEndOf="@+id/recipeName"
+            app:layout_constraintTop_toTopOf="@+id/recipeName" />
+
+        <EditText
+            android:id="@+id/recipeDescription"
+            android:layout_width="300dp"
+            android:layout_height="129dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="47dp"
+            android:ems="10"
+            android:fontFamily="@font/cagliostro"
+            android:hint="@string/recipeDescription"
+            android:inputType="textMultiLine"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="@android:color/background_dark"
+            app:layout_constraintEnd_toEndOf="@+id/recipeName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/recipeName"
+            app:layout_constraintTop_toBottomOf="@+id/recipeName" />
+
+        <Button
+            android:id="@+id/recipeDescription_clear"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/recipeDescription"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/ic_clear_black_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/recipeDescription"
+            app:layout_constraintEnd_toEndOf="@+id/recipeDescription"
+            app:layout_constraintTop_toTopOf="@+id/recipeDescription" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rightView"
+        android:layout_width="174dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/openCamera"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="95dp"
+            android:background="@drawable/side_nav_bar"
+            android:fontFamily="@font/cagliostro"
+            android:text="@string/openCamera" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/side_nav_bar"
+            android:fontFamily="@font/cagliostro"
+            android:text="@android:string/cancel" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/side_nav_bar"
+            android:fontFamily="@font/cagliostro"
+            android:text="@string/save"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <Button
+            android:id="@+id/addPhotos"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="93dp"
+            android:background="@drawable/side_nav_bar"
+            android:fontFamily="@font/cagliostro"
+            android:text="@string/addPhotos" />
+    </RelativeLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+
+</android.support.constraint.ConstraintLayout>

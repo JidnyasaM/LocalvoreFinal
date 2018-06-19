@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "283612920674",
+    "firebase_url": "https://localvore-c3889.firebaseio.com",
+    "project_id": "localvore-c3889",
+    "storage_bucket": "localvore-c3889.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283612920674:android:dde386b9195f56b2",
+        "android_client_info": {
+          "package_name": "com.curiosity.jidnyasa.localvore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283612920674-6lejadcu5h1crsu18m20qs6i0ue42kjr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.curiosity.jidnyasa.localvore",
+            "certificate_hash": "76a278ebad28d7726dc6e2a80bfe0aed8cd3015c"
+          }
+        },
+        {
+          "client_id": "283612920674-utl1cr8s3cl9hp62o8fljeiejefunjr9.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "283612920674-utl1cr8s3cl9hp62o8fljeiejefunjr9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbPvWmp4KgsJHdrr0kv9TN3Hkwi8ipvbI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283612920674-utl1cr8s3cl9hp62o8fljeiejefunjr9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

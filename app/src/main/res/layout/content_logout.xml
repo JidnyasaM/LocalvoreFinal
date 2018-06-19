@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LogoutActivity"
+    tools:showIn="@layout/activity_logout">
+
+    <ImageView
+        android:id="@+id/logoutLogo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/logoutTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/cemong"
+        android:text="@string/title"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="70sp"
+        app:layout_constraintEnd_toEndOf="@+id/logoutLogo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/logoutLogo"
+        app:layout_constraintTop_toBottomOf="@+id/logoutLogo" />
+
+    <TextView
+        android:id="@+id/logoutMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/cagliostro"
+        android:text="@string/logout_message"
+        android:textColor="@android:color/black"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="@+id/logoutLogo"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toStartOf="@+id/logoutLogo"
+        app:layout_constraintTop_toBottomOf="@+id/logoutTitle" />
+
+    <Button
+        android:id="@+id/loginAgain"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/side_nav_bar"
+        android:fontFamily="@font/cagliostro"
+        android:text="@string/login_again"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/logoutLogo"
+        app:layout_constraintStart_toStartOf="@+id/logoutLogo"
+        app:layout_constraintTop_toBottomOf="@+id/logoutMessage" />
+</android.support.constraint.ConstraintLayout>
